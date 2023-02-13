@@ -1,6 +1,7 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import ButtonBack from "../components/ButtonBack";
 import Cards from "../components/Cards";
 
 export default function Home() {
@@ -13,10 +14,14 @@ export default function Home() {
   }, []);
 
   return (
-    <Box bg="black" textAlign="center" mt={{ base: 100, md: 0 }}>
-      <Heading as="a" href="/">
-        Projetos
-      </Heading>
+    <Box bg="black" textAlign="center" mt={{ base: 150, md: 0 }}>
+      <Flex flexDirection='column' gap={5}>
+        <Heading as="a" href="/">
+          Projetos
+        </Heading>
+        <ButtonBack />
+      </Flex>
+
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         gap={5}

@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Box bg="black" textAlign="center" mt={{ base: 150, md: 0 }}>
       <Flex flexDirection='column' gap={5}>
-        <Heading as="a" href="/">
+        <Heading size="3xl" fontFamily="lato" fontWeight="bold" as="a" href="/">
           Projetos
         </Heading>
         <ButtonBack />

@@ -42,7 +42,7 @@ export default function socialProfileWithImageHorizontal({
         </CardBody>
         <Divider />
         <CardFooter>
-          <ButtonGroup spacing="2">
+          <ButtonGroup>
             <Link href={html_url} isExternal>
               <Button
                 rightIcon={<RiGithubFill />}

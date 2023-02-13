@@ -9,7 +9,7 @@ export default function ButtonBack() {
         color="black"
         size="lg"
         height="48px"
-        width="150px"
+        width="120px"
         textTransform="uppercase"
         fontWeight="bold"
         fontFamily="lora"

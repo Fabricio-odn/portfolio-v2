@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ButtonBack from "../components/ButtonBack";
@@ -15,14 +15,12 @@ export default function Home() {
 
   return (
     <Box bg="black" textAlign="center" mt={{ base: 450, md: 0 }}>
-      <Link href="/" _hover={"textDecoration: none"}>
-        <Flex flexDirection="column" gap={5}>
-          <Heading size="3xl" fontFamily="lato" fontWeight="bold" as="h1">
-            Projetos
-          </Heading>
-          <ButtonBack />
-        </Flex>
-      </Link>
+      <Flex flexDirection="column" gap={5}>
+        <Heading size="3xl" fontFamily="lato" fontWeight="bold" as="h1">
+          Projetos
+        </Heading>
+        <ButtonBack />
+      </Flex>
 
       <Flex
         flexDirection={{ base: "column", md: "row" }}

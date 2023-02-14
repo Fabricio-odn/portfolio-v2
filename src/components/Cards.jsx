@@ -43,7 +43,7 @@ export default function socialProfileWithImageHorizontal({
         <Divider />
         <CardFooter>
           <ButtonGroup>
-            <Link href={html_url} isExternal>
+            <Link href={html_url} isExternal _hover={"textDecoration: none"}>
               <Button
                 rightIcon={<RiGithubFill />}
                 variant="solid"
@@ -55,7 +55,7 @@ export default function socialProfileWithImageHorizontal({
                 Github
               </Button>
             </Link>
-            <Link href={homepage} isExternal>
+            <Link href={homepage} isExternal _hover={"textDecoration: none"}>
               <Button
                 variant="outline"
                 color="black"

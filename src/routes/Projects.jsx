@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ButtonBack from "../components/ButtonBack";
@@ -14,13 +14,15 @@ export default function Home() {
   }, []);
 
   return (
-    <Box bg="black" textAlign="center" mt={{ base: 150, md: 0 }}>
-      <Flex flexDirection='column' gap={5}>
-        <Heading size="3xl" fontFamily="lato" fontWeight="bold" as="a" href="/">
-          Projetos
-        </Heading>
-        <ButtonBack />
-      </Flex>
+    <Box bg="black" textAlign="center" mt={{ base: 450, md: 0 }}>
+      <Link href="/" _hover={"textDecoration: none"}>
+        <Flex flexDirection="column" gap={5}>
+          <Heading size="3xl" fontFamily="lato" fontWeight="bold" as="h1">
+            Projetos
+          </Heading>
+          <ButtonBack />
+        </Flex>
+      </Link>
 
       <Flex
         flexDirection={{ base: "column", md: "row" }}
@@ -44,6 +46,12 @@ export default function Home() {
               />
             );
           })}
+        <Cards
+          name="Meus Repositórios no Github"
+          description="Visite meu Github para obter mais informações, onde você pode encontrar uma variedade de meus projetos, testes e lading pages. Obrigado!"
+          html_url="https://github.com/Fabricio-odn?tab=repositories"
+          homepage="https://github.com/Fabricio-odn?tab=repositories"
+        />
       </Flex>
     </Box>
   );

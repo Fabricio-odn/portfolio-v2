@@ -1,7 +1,6 @@
 import { Box, Container, Flex } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 
-
 function App() {
   return (
     <Box width="100vw" height="100vh" bg="black" color="white">

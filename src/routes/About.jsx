@@ -66,7 +66,6 @@ export default function About() {
               fontWeight="bold"
               fontFamily="lora"
               rightIcon={<ImAddressBook />}
-              _hover={{ bg: "#cccccc" }}
             >
               Contato
             </Button>

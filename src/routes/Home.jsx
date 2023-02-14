@@ -19,18 +19,17 @@ export default function Home() {
         fontSize="6xl"
         fontFamily="lora"
         fontWeight="bold"
-        lineHeight={1}
+        lineHeight={{base: 1, md: 0.75}}
         letterSpacing={2}
       >
         FABRICIO OLIVEIRA
       </Heading>
       <Heading
         as="h2"
-        fontSize={{ base: "2xl", sm: "4xl", md: "5xl" }}
+        fontSize={{ base: "1.6rem", sm: "4xl", md: "5xl" }}
         fontFamily="lato"
         fontWeight="normal"
         color="whiteAlpha.700"
-        p={{ base: 2, md: 0 }}
       >
         Desenvolvedor Front-end
       </Heading>
@@ -38,9 +37,9 @@ export default function Home() {
         direction="row"
         align="center"
         justify="center"
-        gap={{ base: 2, md: 5 }}
+        gap={{ base: 1, md: 3 }}
         wrap="wrap"
-        mt={{ base: 0, md: 5 }}
+        mt={{ base: 0, md: 1 }}
       >
         <Button
           size={{ base: "md", md: "lg" }}
@@ -76,7 +75,7 @@ export default function Home() {
           <RouterLink to="/Contato">Contato</RouterLink>
         </Button>
       </Stack>
-      <HStack marginTop="5" align="center">
+      <HStack marginTop="2" align="center">
         <Link href="https://github.com/Fabricio-odn">
           <Icon as={RiGithubFill} boxSize="8" />
         </Link>

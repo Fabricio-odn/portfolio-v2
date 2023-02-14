@@ -1,13 +1,19 @@
 import { Box, Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import React from "react";
-import ButtonBack from "../components/ButtonBack";
 import { ImAddressBook } from "react-icons/im";
+import ButtonBack from "../components/ButtonBack";
 
 export default function About() {
   return (
-    <Box bg="black" mt={{ base: 150, md: 0 }}>
+    <Box bg="black" paddingTop={{ base: "9rem", md: 0 }}>
       <Flex flexDirection="column" gap={1} p={5}>
-        <Heading as="h1" fontSize="6xl" fontFamily="lora" fontWeight="bold">
+        <Heading
+          as="h1"
+          fontSize="6xl"
+          fontFamily="lora"
+          fontWeight="bold"
+          lineHeight={1}
+        >
           Fabricio Oliveira
         </Heading>
         <Box>
@@ -25,11 +31,12 @@ export default function About() {
             atraentes. Estou ansioso para trazer minha paixão e habilidades para
             um ambiente profissional e continuar a crescer como desenvolvedor.
           </Text>
-          <Flex flexDirection="column" mt={5} gap={2}>
+          <Flex flexDirection="column" mt={5}>
             <Heading as="h2" fontSize="4xl" fontFamily="lora" fontWeight="bold">
               Habilidades
             </Heading>
-            <Text
+            <Flex
+              flexDirection="column"
               fontSize="2xl"
               fontFamily="lato"
               fontWeight="normal"
@@ -42,7 +49,7 @@ export default function About() {
               <p>- Styled-Components</p>
               <p>- TailwindCSS</p>
               <p>- Chakra UI</p>
-            </Text>
+            </Flex>
           </Flex>
         </Box>
         <Box paddingTop={2}>
@@ -54,14 +61,14 @@ export default function About() {
               bg="white"
               size="lg"
               height="48px"
-              width="120px"
+              width="140px"
               textTransform="uppercase"
               fontWeight="bold"
               fontFamily="lora"
               rightIcon={<ImAddressBook />}
               _hover={{ bg: "#cccccc" }}
             >
-              Deploy
+              Contato
             </Button>
           </Link>
         </Box>

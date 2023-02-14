@@ -14,9 +14,9 @@ export default function Home() {
   }, []);
 
   return (
-    <Box bg="black" textAlign="center" mt={{ base: 450, md: 0 }}>
-      <Flex flexDirection="column" gap={5}>
-        <Heading size="3xl" fontFamily="lato" fontWeight="bold" as="h1">
+    <Box bg="black" textAlign="center" paddingTop={{ base: '28rem', md: 0 }}>
+      <Flex flexDirection="column" gap={3}>
+        <Heading Heading as="h1" fontSize="6xl" fontFamily="lora" fontWeight="bold">
           Projetos
         </Heading>
         <ButtonBack />

@@ -13,17 +13,23 @@ import { Link as RouterLink } from "react-router-dom";
 
 export default function Home() {
   return (
-    <Flex flexDirection="column" gap="2" align="center" textAlign="center">
-      <Heading as="h1" size="3xl" fontFamily="lato" fontWeight="bold">
+    <Flex flexDirection="column" gap={2} align="center" textAlign="center">
+      <Heading
+        as="h1"
+        fontSize="6xl"
+        fontFamily="lora"
+        fontWeight="bold"
+        lineHeight={1}
+        letterSpacing={2}
+      >
         FABRICIO OLIVEIRA
       </Heading>
       <Heading
-        as="h1"
-        size={{ base: "lg", sm: "2xl", md: "2xl" }}
+        as="h2"
+        fontSize={{ base: "2xl", sm: "4xl", md: "5xl" }}
         fontFamily="lato"
         fontWeight="normal"
         color="whiteAlpha.700"
-        wordBreak="break-word"
         p={{ base: 2, md: 0 }}
       >
         Desenvolvedor Front-end
@@ -41,6 +47,8 @@ export default function Home() {
           bg="white"
           color="black"
           variant="solid"
+          fontWeight="bold"
+          fontFamily="lora"
           _hover={{ bg: "whiteAlpha.800" }}
         >
           <RouterLink to="/Projetos">Projetos</RouterLink>
@@ -50,6 +58,8 @@ export default function Home() {
           bg="white"
           color="black"
           variant="solid"
+          fontWeight="bold"
+          fontFamily="lora"
           _hover={{ bg: "whiteAlpha.800" }}
         >
           <RouterLink to="/Sobre">Sobre</RouterLink>
@@ -59,6 +69,8 @@ export default function Home() {
           bg="white"
           color="black"
           variant="solid"
+          fontWeight="bold"
+          fontFamily="lora"
           _hover={{ bg: "whiteAlpha.800" }}
         >
           <RouterLink to="/Contato">Contato</RouterLink>

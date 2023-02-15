@@ -54,7 +54,7 @@ export default function About() {
         </Box>
         <Box paddingTop={2}>
           <ButtonBack />
-          <Link paddingLeft={5} href="/contact" _hover={"textDecoration: none"}>
+          <Link paddingLeft={5} href="/Contato" _hover={"textDecoration: none"}>
             <Button
               variant="outline"
               color="black"

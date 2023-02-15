@@ -34,7 +34,7 @@ export default function Contact() {
 
       <Flex align="center" gap={2} mt={1}>
         <Link
-          href="https://drive.google.com/drive/u/0/folders/1S-q3FF2zBYX3lMqVBrWWxIX_tsnl9jHN"
+          href="https://drive.google.com/file/d/1kB40-puJng3bLeO_sN1lInK4bumLjLcv/view?usp=sharing"
           _target="_blank"
         >
           <Box bg="whiteAlpha.900" color="black" borderRadius={4} p={1.5}>
@@ -46,7 +46,7 @@ export default function Contact() {
           fontSize="2xl"
           fontFamily="lato"
           fontWeight="normal"
-          href="https://drive.google.com/drive/u/0/folders/1S-q3FF2zBYX3lMqVBrWWxIX_tsnl9jHN"
+          href="https://drive.google.com/file/d/1kB40-puJng3bLeO_sN1lInK4bumLjLcv/view?usp=sharing"
           _target="_blank"
         >
           Baixar Currículo

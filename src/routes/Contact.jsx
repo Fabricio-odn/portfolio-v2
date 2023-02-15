@@ -2,7 +2,6 @@ import { Box, Flex, Heading, HStack, Link } from "@chakra-ui/react";
 import React from "react";
 import { ImDownload, ImEnvelop } from "react-icons/im";
 import { RiGithubFill, RiLinkedinFill } from "react-icons/ri";
-import ButtonBack from "../components/ButtonBack";
 
 export default function Contact() {
   return (

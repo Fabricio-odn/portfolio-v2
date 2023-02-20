@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, HStack, Link } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, HStack, Link } from "@chakra-ui/react";
 import React from "react";
-import { ImDownload, ImEnvelop } from "react-icons/im";
+import { ImDownload, ImEnvelop, ImDrawer } from "react-icons/im";
 import { RiGithubFill, RiLinkedinFill } from "react-icons/ri";
+import ButtonBack from "../components/ButtonBack";
 
 export default function Contact() {
   return (
@@ -89,6 +90,25 @@ export default function Contact() {
           </Link>
         </Flex>
       </HStack>
+      <Box mt={2}>
+        <ButtonBack />
+        <Link paddingLeft={2} href="/Projetos" _hover={"textDecoration: none"}>
+          <Button
+            variant="outline"
+            color="black"
+            bg="white"
+            size="lg"
+            height="48px"
+            width="140px"
+            textTransform="uppercase"
+            fontWeight="bold"
+            fontFamily="lora"
+            rightIcon={<ImDrawer />}
+          >
+            Projetos
+          </Button>
+        </Link>
+      </Box>
     </Box>
   );
 }

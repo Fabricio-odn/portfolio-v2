@@ -1,7 +1,8 @@
 import { Box, Button, Flex, Heading, HStack, Link } from "@chakra-ui/react";
 import React from "react";
-import { ImDownload, ImEnvelop, ImDrawer } from "react-icons/im";
+import { ImDownload, ImDrawer, ImEnvelop } from "react-icons/im";
 import { RiGithubFill, RiLinkedinFill } from "react-icons/ri";
+import { Link as RouterLink } from "react-router-dom";
 import ButtonBack from "../components/ButtonBack";
 
 export default function Contact() {
@@ -92,7 +93,7 @@ export default function Contact() {
       </HStack>
       <Box mt={2}>
         <ButtonBack />
-        <Link paddingLeft={2} href="/Projetos" _hover={"textDecoration: none"}>
+        <Link paddingLeft={2} _hover={"textDecoration: none"}>
           <Button
             variant="outline"
             color="black"
@@ -105,7 +106,7 @@ export default function Contact() {
             fontFamily="lora"
             rightIcon={<ImDrawer />}
           >
-            Projetos
+            <RouterLink to="/Projetos">Projetos</RouterLink>
           </Button>
         </Link>
       </Box>

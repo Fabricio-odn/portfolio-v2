@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { ImAddressBook } from "react-icons/im";
+import { Link as RouterLink } from "react-router-dom";
 import ButtonBack from "../components/ButtonBack";
 
 export default function About() {
@@ -54,7 +55,7 @@ export default function About() {
         </Box>
         <Box paddingTop={2}>
           <ButtonBack />
-          <Link paddingLeft={5} href="/Contato" _hover={"textDecoration: none"}>
+          <Link paddingLeft={5} _hover={"textDecoration: none"}>
             <Button
               variant="outline"
               color="black"
@@ -67,7 +68,7 @@ export default function About() {
               fontFamily="lora"
               rightIcon={<ImAddressBook />}
             >
-              Contato
+              <RouterLink to="/Contato">Contato</RouterLink>
             </Button>
           </Link>
         </Box>

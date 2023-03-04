@@ -1,4 +1,4 @@
-# :woman_technologist: Meu Portfólio
+# :man_technologist: Meu Portfólio
 
 # Sumário
 

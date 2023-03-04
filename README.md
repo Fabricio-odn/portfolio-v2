@@ -73,19 +73,4 @@ Para realizar a estilização, foi utilizado o framework [**Chakra UI**](https:/
 
 ## Icones
 
-Os ícones utilizados foram os da biblioteca [**React Icons**](https://react-icons.github.io/react-icons/)
-
-## 🦄 Autor<br>
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Fabricio-odn">
-         <img src=https://avatars.githubusercontent.com/u/92886298?v=4" width="100px;" alt="Foto de Fabricio Oliveira no GitHub"/><br>
-        <sub>
-          <b>Fabricio Oliveira</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+Os ícones utilizados foram os da biblioteca [**React Icons**](https://react-icons.github.io/react-icons/).
